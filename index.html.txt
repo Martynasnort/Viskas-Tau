@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Individuali veikla – Įvairūs darbai</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f0f0; color: #333; }
+    header { background: #0066cc; color: white; padding: 20px; text-align: center; }
+    nav { background: #004999; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; }
+    h1, h2 { color: #004999; }
+    footer { background: #004999; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Individuali veikla – Įvairūs darbai</h1>
+  <p>Valymas, griovimas, staliaus paslaugos ir daugiau</p>
+</header>
+
+<nav>
+  <a href="#apie">Apie mus</a>
+  <a href="#paslaugos">Paslaugos</a>
+  <a href="#kontaktai">Kontaktai</a>
+</nav>
+
+<section id="apie">
+  <h2>Apie mus</h2>
+  <p>Esame patikima individuali veikla, teikianti aukštos kokybės valymo, griovimo bei staliaus paslaugas. Mūsų tikslas – Jūsų namų ar verslo vietos tvarka ir komfortas.</p>
+</section>
+
+<section id="paslaugos">
+  <h2>Paslaugos</h2>
+  <ul>
+    <li><strong>Valymo paslaugos:</strong> namų, biurų, po remonto valymas.</li>
+    <li><strong>Griovimo darbai:</strong> sienų griovimas, griovimo atliekų išvežimas.</li>
+    <li><strong>Staliaus paslaugos:</strong> baldų gamyba, remontas, individualūs sprendimai.</li>
+  </ul>
+</section>
+
+<section id="kontaktai">
+  <h2>Kontaktai</h2>
+  <p>Tel.: +370 600 00000</p>
+  <p>El. paštas: info@tavo-imone.lt</p>
+  <p>Adresas: Vilnius, Lietuva</p>
+</section>
+
+<footer>
+  <p>© 2025 Individuali veikla. Visos teisės saugomos.</p>
+</footer>
