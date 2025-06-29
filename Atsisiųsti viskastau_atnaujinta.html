@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viskas Tau – Įvairūs darbai</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4e2d8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      color: #222;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #e0e0e0;
+      position: relative;
+    }
+    header h1 {
+      color: #e7d8c9;
+    }
+    h2 {
+      color: #e7d8c9;
+    }
+    a {
+      color: #e7d8c9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #d1c0b0;
+    }
+    .social-fixed {
+      position: fixed;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    .social-fixed img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s, opacity 0.3s;
+      cursor: pointer;
+    }
+    .social-fixed img:hover {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<div class="social-fixed">
+  <a href="https://facebook.com/tavo-puslapis" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+  </a>
+  <a href="https://wa.me/37060000000" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+  <a href="mailto:viskastau@gmail.com">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+  </a>
+</div>
+
+<header class="fade-in">
+  <h1>Viskas Tau</h1>
+  <p>Valymo, griovimo ir staliaus darbai visoje Lietuvoje</p>
+</header>
+
+<section class="fade-in">
+  <h2>Paslaugos ir kainos</h2>
+  <ul>
+    <li>🧹 Buitinis valymas – nuo 25 €</li>
+    <li>🏚️ Griovimo darbai – nuo 30 €</li>
+    <li>🪚 Baldų surinkimas ir remontas – nuo 20 €</li>
+    <li>🚛 Statybinių atliekų išvežimas – nuo 35 €</li>
+  </ul>
+</section>
+
+<script>
+const fadeElements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  fadeElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100) {
+      el.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
